@@ -32,7 +32,7 @@ const Dashboard = () => {
             <b>62</b>
           </Tiles>
           <Tiles size={{ xs: 12, sm: 6, md: 3 }}>
-            <h3>Number of Companies</h3>
+            <h3>Number of Operators</h3>
             <b>12</b>
           </Tiles>
         </TilesContainer>

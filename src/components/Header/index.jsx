@@ -6,6 +6,9 @@ import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import { TextInput } from '../../../src/components/Input';
 import { IconButtons } from '../common/Button';
 import { IconButton } from '@mui/material';
+import styles from '../SideBar/styled.module.scss';
+
+
 
 
 
@@ -53,11 +56,20 @@ const Header = ({ toggleOpenSideBar }) => {
         <IconButton onClick={toggleOpenSideBar}>
           <MenuIcon />
         </IconButton>
-        <a href={'/'}>Sanjay Transport</a>
+
+        <div style={{ display: 'contents', justifyContent: 'center', marginBottom: '20px' }}>
+         <a href={'/'}> <img
+            src="../../../public/buts-logo2.png"
+            alt="Logo"
+            style={{ width: '200px', height: '97px', objectFit: 'contain' }}
+            />
+            </a>
+        </div>
+
       </LeftContainer>
       <RightContainer>
         <div>
-<IconButtons></IconButtons>
+          <IconButtons></IconButtons>
 
         </div>
         <div>
