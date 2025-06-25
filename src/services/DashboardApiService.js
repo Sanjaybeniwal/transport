@@ -5,15 +5,14 @@ class DashboardApiService extends BaseApiRequest {
   constructor() {
     super();
   }
-
+// for fetching tiles data
   static fetchDashboardTilesDetails = async () => {
-    // return await BaseApiRequest.get('/dashboard/tiles');
-    return Promise.resolve({
-      vehicles: 200,
-      income: 150000.00,
-      transporter: 65,
-      companies: 48,
-    });
+    return await BaseApiRequest.get('http://localhost/quizapplication/dashboard.php');
+  };
+
+  // for fetching vehicle details
+  static fetchVehicleDetails = async () => {
+    return await BaseApiRequest.get('http://localhost/quizapplication/get_vehicle_details.php');
   };
 }
 

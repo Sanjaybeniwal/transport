@@ -37,3 +37,17 @@ export const Tiles = styled(Grid)({
     },
   },
 });
+  //-------table design start-----------//
+  export const tableHeaderStyle = {
+    border: '1px solid #ccc',
+    padding: '10px',
+    backgroundColor: '#f0f0f0',
+    textAlign: 'left',
+  };
+
+  export const tableCellStyle = {
+    border: '1px solid #ccc',
+    padding: '10px',
+  };
+  //------- table design end----------//
+
